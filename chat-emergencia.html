@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat de Emergência | Cedro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-tree me-2 fs-3"></i>
+                <span class="fw-bold fs-4">CEDRO</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#sobre">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#recursos">Recursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contato">Contato</a>
+                    </li>
+                </ul>
+                <a href="index.html#ajuda" class="btn btn-light ms-3">Preciso de Ajuda</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Chat Section -->
+    <section class="chat-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow">
+                        <div class="card-header bg-primary text-white py-3">
+                            <h2 class="h4 mb-0 text-center">Chat de Emergência</h2>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="chat-container" id="chatContainer">
+                                <div class="chat-message bot">
+                                    <div class="message-content">
+                                        <p>Olá, estou aqui para ajudar você a se acalmar. Vamos conversar um pouco?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="response-options mt-4" id="responseOptions">
+                                <button class="btn btn-outline-primary mb-2 w-100" onclick="selectOption('Sim, estou me sentindo ansioso(a)')">Sim, estou me sentindo ansioso(a)</button>
+                                <button class="btn btn-outline-primary mb-2 w-100" onclick="selectOption('Estou tendo pensamentos negativos')">Estou tendo pensamentos negativos</button>
+                                <button class="btn btn-outline-primary mb-2 w-100" onclick="selectOption('Estou em pânico')">Estou em pânico</button>
+                                <button class="btn btn-outline-primary w-100" onclick="selectOption('Preciso conversar com alguém')">Preciso conversar com alguém</button>
+                            </div>
+                            
+                            <div class="emergency-contact mt-4 text-center">
+                                <p class="mb-2">Se você estiver em uma emergência grave, por favor:</p>
+                                <a href="tel:188" class="btn btn-danger">
+                                    <i class="bi bi-telephone me-2"></i> Ligue 188 (CVV)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <a href="index.html" class="d-flex align-items-center text-white text-decoration-none mb-3">
+                        <i class="bi bi-tree me-2 fs-3"></i>
+                        <span class="fw-bold fs-4">CEDRO</span>
+                    </a>
+                    <p class="mb-0">&copy; 2023 Cedro. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Em caso de emergência, ligue para 188 (CVV)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Chat JS -->
+    <script src="js/chat.js"></script>
+</body>
+</html>
