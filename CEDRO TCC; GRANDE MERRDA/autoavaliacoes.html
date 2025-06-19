@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoavaliações | Cedro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-tree me-2 fs-3"></i>
+                <span class="fw-bold fs-4">CEDRO</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#sobre">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html#recursos">Recursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contato">Contato</a>
+                    </li>
+                </ul>
+                <a href="index.html#ajuda" class="btn btn-light ms-3">Preciso de Ajuda</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="fw-bold mb-3">Autoavaliações</h1>
+                    <p class="lead mb-4">Ferramentas para ajudar a identificar sinais de ansiedade e depressão.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="rounded-3 shadow overflow-hidden">
+                        <div class="bg-primary text-white p-5 text-center">
+                            <i class="bi bi-clipboard-check fs-1 mb-3"></i>
+                            <h2 class="h4 fw-bold">Conheça melhor sua saúde mental</h2>
+                            <p class="mb-0">Avaliações simples para orientar seu autocuidado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sobre as Autoavaliações -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fw-bold mb-4">Sobre nossas autoavaliações</h2>
+                    <p>As autoavaliações são ferramentas de triagem que podem ajudar a identificar possíveis sinais de ansiedade e depressão. Elas não substituem um diagnóstico profissional, mas podem ser um primeiro passo importante para entender melhor sua saúde mental e buscar ajuda quando necessário.</p>
+                    
+                    <div class="alert alert-info my-4">
+                        <div class="d-flex">
+                            <i class="bi bi-info-circle fs-4 me-3"></i>
+                            <div>
+                                <h4 class="h5 fw-bold">Importante</h4>
+                                <p class="mb-0">Estas avaliações são apenas ferramentas de triagem e não substituem uma consulta com um profissional de saúde mental. Se você está enfrentando dificuldades emocionais, recomendamos buscar ajuda profissional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avaliação de Ansiedade -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fw-bold mb-4">Avaliação de Ansiedade</h2>
+                    <p class="mb-4">Responda às perguntas abaixo pensando em como você se sentiu nas últimas duas semanas. Seja honesto para obter um resultado mais preciso.</p>
+                    
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4">
+                            <form id="ansiedadeForm">
+                                <div class="mb-4">
+                                    <p class="fw-bold mb-3">1. Com que frequência você se sentiu nervoso, ansioso ou tenso?</p>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta1" id="p1r0" value="0">
+                                        <label class="form-check-label" for="p1r0">Nunca</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta1" id="p1r1" value="1">
+                                        <label class="form-check-label" for="p1r1">Alguns dias</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta1" id="p1r2" value="2">
+                                        <label class="form-check-label" for="p1r2">Mais da metade dos dias</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pergunta1" id="p1r3" value="3">
+                                        <label class="form-check-label" for="p1r3">Quase todos os dias</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <p class="fw-bold mb-3">2. Com que frequência você não conseguiu parar de se preocupar ou controlar a preocupação?</p>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta2" id="p2r0" value="0">
+                                        <label class="form-check-label" for="p2r0">Nunca</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta2" id="p2r1" value="1">
+                                        <label class="form-check-label" for="p2r1">Alguns dias</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta2" id="p2r2" value="2">
+                                        <label class="form-check-label" for="p2r2">Mais da metade dos dias</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pergunta2" id="p2r3" value="3">
+                                        <label class="form-check-label" for="p2r3">Quase todos os dias</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <p class="fw-bold mb-3">3. Com que frequência você se sentiu muito inquieto, de forma que era difícil ficar parado?</p>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta3" id="p3r0" value="0">
+                                        <label class="form-check-label" for="p3r0">Nunca</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta3" id="p3r1" value="1">
+                                        <label class="form-check-label" for="p3r1">Alguns dias</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta3" id="p3r2" value="2">
+                                        <label class="form-check-label" for="p3r2">Mais da metade dos dias</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pergunta3" id="p3r3" value="3">
+                                        <label class="form-check-label" for="p3r3">Quase todos os dias</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <p class="fw-bold mb-3">4. Com que frequência você se sentiu facilmente irritável ou incomodado?</p>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta4" id="p4r0" value="0">
+                                        <label class="form-check-label" for="p4r0">Nunca</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta4" id="p4r1" value="1">
+                                        <label class="form-check-label" for="p4r1">Alguns dias</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta4" id="p4r2" value="2">
+                                        <label class="form-check-label" for="p4r2">Mais da metade dos dias</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pergunta4" id="p4r3" value="3">
+                                        <label class="form-check-label" for="p4r3">Quase todos os dias</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <p class="fw-bold mb-3">5. Com que frequência você sentiu medo como se algo terrível fosse acontecer?</p>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta5" id="p5r0" value="0">
+                                        <label class="form-check-label" for="p5r0">Nunca</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta5" id="p5r1" value="1">
+                                        <label class="form-check-label" for="p5r1">Alguns dias</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta5" id="p5r2" value="2">
+                                        <label class="form-check-label" for="p5r2">Mais da metade dos dias</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pergunta5" id="p5r3" value="3">
+                                        <label class="form-check-label" for="p5r3">Quase todos os dias</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="text-center mt-4">
+                                    <button type="button" class="btn btn-primary btn-lg" onclick="calcularAnsiedade()">Ver Resultado</button>
+                                </div>
+                            </form>
+                            
+                            <div id="resultadoAnsiedade" class="mt-4 p-4 border rounded d-none">
+                                <h3 class="h5 fw-bold mb-3">Resultado da Avaliação</h3>
+                                <p id="pontuacaoAnsiedade" class="mb-2"></p>
+                                <p id="interpretacaoAnsiedade" class="mb-3"></p>
+                                <div class="alert alert-warning">
+                                    <div class="d-flex">
+                                        <i class="bi bi-exclamation-triangle fs-4 me-3"></i>
+                                        <p class="mb-0">Lembre-se: Esta é apenas uma ferramenta de triagem. Se você está preocupado com seus resultados, recomendamos buscar a orientação de um profissional de saúde mental.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avaliação de Depressão -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fw-bold mb-4">Avaliação de Depressão</h2>
+                    <p class="mb-4">Responda às perguntas abaixo pensando em como você se sentiu nas últimas duas semanas. Seja honesto para obter um resultado mais preciso.</p>
+                    
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4">
+                            <form id="depressaoForm">
+                                <div class="mb-4">
+                                    <p class="fw-bold mb-3">1. Com que frequência você sentiu pouco interesse ou prazer em fazer as coisas?</p>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta1d" id="p1d0" value="0">
+                                        <label class="form-check-label" for="p1d0">Nunca</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta1d" id="p1d1" value="1">
+                                        <label class="form-check-label" for="p1d1">Alguns dias</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta1d" id="p1d2" value="2">
+                                        <label class="form-check-label" for="p1d2">Mais da metade dos dias</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pergunta1d" id="p1d3" value="3">
+                                        <label class="form-check-label" for="p1d3">Quase todos os dias</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <p class="fw-bold mb-3">2. Com que frequência você se sentiu para baixo, deprimido ou sem esperança?</p>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta2d" id="p2d0" value="0">
+                                        <label class="form-check-label" for="p2d0">Nunca</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta2d" id="p2d1" value="1">
+                                        <label class="form-check-label" for="p2d1">Alguns dias</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta2d" id="p2d2" value="2">
+                                        <label class="form-check-label" for="p2d2">Mais da metade dos dias</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pergunta2d" id="p2d3" value="3">
+                                        <label class="form-check-label" for="p2d3">Quase todos os dias</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <p class="fw-bold mb-3">3. Com que frequência você teve dificuldade para pegar no sono ou permanecer dormindo, ou dormiu mais do que de costume?</p>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta3d" id="p3d0" value="0">
+                                        <label class="form-check-label" for="p3d0">Nunca</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta3d" id="p3d1" value="1">
+                                        <label class="form-check-label" for="p3d1">Alguns dias</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta3d" id="p3d2" value="2">
+                                        <label class="form-check-label" for="p3d2">Mais da metade dos dias</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pergunta3d" id="p3d3" value="3">
+                                        <label class="form-check-label" for="p3d3">Quase todos os dias</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <p class="fw-bold mb-3">4. Com que frequência você se sentiu cansado ou com pouca energia?</p>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta4d" id="p4d0" value="0">
+                                        <label class="form-check-label" for="p4d0">Nunca</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta4d" id="p4d1" value="1">
+                                        <label class="form-check-label" for="p4d1">Alguns dias</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta4d" id="p4d2" value="2">
+                                        <label class="form-check-label" for="p4d2">Mais da metade dos dias</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pergunta4d" id="p4d3" value="3">
+                                        <label class="form-check-label" for="p4d3">Quase todos os dias</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <p class="fw-bold mb-3">5. Com que frequência você se sentiu mal consigo mesmo ou achou que é um fracasso ou que decepcionou sua família ou a si mesmo?</p>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta5d" id="p5d0" value="0">
+                                        <label class="form-check-label" for="p5d0">Nunca</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta5d" id="p5d1" value="1">
+                                        <label class="form-check-label" for="p5d1">Alguns dias</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="pergunta5d" id="p5d2" value="2">
+                                        <label class="form-check-label" for="p5d2">Mais da metade dos dias</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pergunta5d" id="p5d3" value="3">
+                                        <label class="form-check-label" for="p5d3">Quase todos os dias</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="text-center mt-4">
+                                    <button type="button" class="btn btn-primary btn-lg" onclick="calcularDepressao()">Ver Resultado</button>
+                                </div>
+                            </form>
+                            
+                            <div id="resultadoDepressao" class="mt-4 p-4 border rounded d-none">
+                                <h3 class="h5 fw-bold mb-3">Resultado da Avaliação</h3>
+                                <p id="pontuacaoDepressao" class="mb-2"></p>
+                                <p id="interpretacaoDepressao" class="mb-3"></p>
+                                <div class="alert alert-warning">
+                                    <div class="d-flex">
+                                        <i class="bi bi-exclamation-triangle fs-4 me-3"></i>
+                                        <p class="mb-0">Lembre-se: Esta é apenas uma ferramenta de triagem. Se você está preocupado com seus resultados, recomendamos buscar a orientação de um profissional de saúde mental.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <a href="index.html" class="d-flex align-items-center text-white text-decoration-none mb-3">
+                        <i class="bi bi-tree me-2 fs-3"></i>
+                        <span class="fw-bold fs-4">CEDRO</span>
+                    </a>
+                    <p class="mb-0">&copy; 2023 Cedro. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Em caso de emergência, ligue para 188 (CVV)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/autoavaliacoes.js"></script>
+</body>
+</html>
